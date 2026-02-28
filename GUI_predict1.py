@@ -144,7 +144,7 @@ class LogisticRegressionApp:
                 features = features.reshape(1,-1)
                 # features = self.scaler.transform([features])
                 prediction_proba = self.model.predict_proba(features)[:,1]
-                # 自定义阈值
+                # Threshold calibration
                 threshold = self.thre_final
 
                 # 根据自定义阈值确定最终标签
@@ -162,4 +162,5 @@ class LogisticRegressionApp:
 root = tk.Tk()
 app = LogisticRegressionApp(root)
 root.mainloop()
+
 
