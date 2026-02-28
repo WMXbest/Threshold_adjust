@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Jul 17 21:25:09 2024
-python 导入自定义函数
+Custom utility functions
 @author: wmxbe
 """
 
@@ -329,3 +329,4 @@ def test_model(neg_sim2, y_neg_sim2,threshold_cali,optimal_point):
     Spe_sim2=TN/(TN+FP)
     
     return Spe_sim2, y_pred_prob_neg_sim2
+
