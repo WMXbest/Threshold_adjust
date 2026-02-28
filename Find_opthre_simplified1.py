@@ -36,7 +36,7 @@ import custom_function as cf
 # =============================================================================
 # 1.Input training data from source domain.
 # =============================================================================
-#1.input training data. #问题：需要把训练集全部放进去训练吗？领域间分布差异导致的“数据偏移”（data shift）问题.
+#1.input training data. #领域间分布差异导致的“数据偏移”（data shift）问题.
 np.random.seed(29)
 # Generate a dataset with 10000 samples, 2 features, and no imbalance (balancing data is very important in this scene and we have to modefitr this imbalanced data to balanced datain to imbanlanced data
 #is very important. in this scene.)
@@ -78,3 +78,4 @@ print(f"Spe_final: {Spe_final}")
 # Unseen test data 
 # =============================================================================
 # Using threshold after fine tuning to substitute into the model
+
